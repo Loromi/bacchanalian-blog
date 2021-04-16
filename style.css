@@ -1,0 +1,56 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vh 20vh 20vh 20vh 20vh 10vh;
+    grid-template-areas: 
+    "hd"
+    "sd"
+    "main"
+    "main"
+    "main"
+    "ft";
+}
+
+.box{
+    /* display: flex; */
+    width: 95vw;
+    border: 2px solid rgb(122, 57, 57);
+    background-color: rgb(170, 170, 170, 0.37);
+}
+
+.content{
+    display: grid;
+    grid-template-areas:
+    "int"
+    "rcnt";
+}
+
+.header{
+    grid-area: hd;
+}
+
+.sidebar{
+    grid-area: sd;
+}
+
+.content{
+    grid-area: main;
+}
+
+.footer{
+    grid-area: ft;
+}
+
+.nested-box{
+    width: 85vw;
+    border: 2px solid rgb(122, 57, 57, 0.69);
+    background-color: rgb(170, 170, 170, 0.67);
+}
+
+.intro{
+    grid-area: int;
+}
+
+.recent{
+    grid-area: rcnt;
+}
