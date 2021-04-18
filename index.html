@@ -7,28 +7,66 @@
     <meta name="keywords" content="Techno, Hypnotic, Raw, DJ, Music">
     <meta name="author" content="Romario Lorenz">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Merriweather+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <div class="container">
-      <header class="header box">Header</header>
+      <header class="header box">Blog of Bacchanalia</header>
       <nav class="navbar box">
         <header>
           <h2>Navbar</h2>
         </header>
-        <a rel="recent-post" href="blogpost001.html">Recent Post (001)</a>
-        <a width="67px" heigth="42px" rel="soundcloud-bf" href="https://soundcloud.com/bacchanalianfaith" target="_blank">
-          <img width="67" height="67" src="public/images/soundcloud-logo.png" alt="Bacchanalian Faith on SoundCloud">
+        <a rel="recent-post" href="blogpost001.html" class="nested-box">Recent Post (001)</a>
+        <a rel="soundcloud-bf" href="https://soundcloud.com/bacchanalianfaith" class="nested-box button logo" target="_blank">
+          <img src="public/images/soundcloud-logo.png" alt="Bacchanalian Faith on SoundCloud" id="sc-logo">
+          <p class="link">snd.cld/bacchanalianfaith</p>
+        </a>
+        <a rel="facebook-bf" href="https://www.facebook.com/bacchanalianfaith/" class="nested-box button logo" target="_blank">
+          <img src="public/images/facebook-logo.png" alt="Bacchanalian Faith on facebook" id="fb-logo">
+          <p class="link">fb.bac/chanalianfaith</p>
         </a>
       </nav>
       <section class="content box">
-        <article class="intro nested-box">Intro Content</article>
-        <article class="recent nested-box">Recent Post Preview</article>
+        <article class="intro nested-box">
+          <h3 id="heading-about">
+            About
+          </h3>
+          <p id="bio-about">
+            We are two electronic music artists based in Vienna, with our project 'Bacchanalian Faith' we're creating raw and hypnotizing techno mixes, while simultaneously writing and recording own music.
+          </p>
+          <p id="main-about">
+            On this blog we want to share our own music alongside art of any kind that inspires us.
+          </p>
+          <p id="vision-about">
+            Our shared vision defines Klub-culture as a safer space that pushes the boundaries of culture and society.
+          </p>
+        </article>
+        <article class="recent nested-box">
+          <h3 class="heading-recent">
+            Dionysia I
+          </h3>
+          <p class="info-recent">
+            <strong>by:</strong> 
+            <em>bacchanalian_faith</em>
+          </p>
+          <p class="preview-recent">
+
+            <a rel="recent-post" href="blogpost001.html" class="nested-box"><em>read more...</em></a>
+          </p>
+        </article>
       </section>
       <footer class="footer box">
-        <h2>Footer</h2>
-        <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+        <div class="logo-license">
+          Icons made by 
+          <a href="https://www.freepik.com" title="Freepik">Freepik</a> 
+          and
+          <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> 
+          from  
+          <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+        </div>
       </footer>
     </div>
   </body>
