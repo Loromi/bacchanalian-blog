@@ -45,3 +45,30 @@ em {
         "ft ft ft ft";
     }
 }
+
+.header{
+    grid-area: hd;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: bold;
+    font-size: 4vh;
+    margin: auto;
+}
+
+.content{
+    grid-area: main;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+}
+
+.footer{
+    grid-area: ft;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+}
