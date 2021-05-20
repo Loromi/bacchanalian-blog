@@ -18,3 +18,44 @@ em {
     background-color: rgb(122, 57, 57, 0.12);
     border-radius: 8px;
 }
+
+
+/* Navigation Styles*/
+.navbar__menu ul {
+    background:  rgba(0,13,60,1);
+    background: linear-gradient(.25turn, rgba(167, 170, 170, 0.17), rgba(167, 170, 170, 1));
+    margin: 0;  
+    padding: 0.2rem 0 0.2rem 0;
+    text-align: right;
+    border: 1px solid rgba(122, 57, 57, 0.82);
+    border-radius: 2%;
+}
+
+.navbar__menu li {
+    display: inline-block;
+    background: rgba(67, 70, 70, 0.17);
+    border: 1px solid rgb(122, 57, 57, 0.12);
+    margin-right: 3px;
+    border-radius: 5%;
+    border-collapse: collapse;
+}
+
+.navbar__menu .menu__link {
+    display: block;
+    padding: 1.2rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: rgba(122, 57, 57, 0.82);
+}
+
+.navbar__menu .menu__link:hover {
+    padding: 1.0rem;
+    font-size: 1.4rem;
+    color: rgb(122, 57, 57, 1);
+    transition: ease 0.3s all;
+}
+
+.active__link {
+    background: rgba(0,13,60,1) !important;
+    color: rgba(136,203,171,1) !important;
+}
