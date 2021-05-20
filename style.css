@@ -105,8 +105,13 @@ em{
     /* margin-right: 1em; */
 }
 
-.navbar .nested-box{
-    width: 187px;
+.nav-list{
+    padding-inline-start: 0px;
+}
+
+.nav-item{
+    list-style: none;
+    text-decoration: none;
 }
 
 .intro{
