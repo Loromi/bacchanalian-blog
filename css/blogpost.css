@@ -3,12 +3,24 @@
 .container{
     display: grid;
     grid-template-columns: 1fr !important;
-    grid-template-rows: 10vh repeat(5, 1fr);
+    grid-template-rows: 15vh auto auto 15vh;
     grid-template-areas: 
     "hd"
     "post"
     "mp"
     "ft";
+}
+
+@media(min-width: 1150px) {
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr !important;
+        grid-template-rows: 15vh auto auto 15vh;
+        grid-template-areas: 
+        "hd hd"
+        "post mp"
+        "ft ft";
+    }
 }
 
 .post{
@@ -19,3 +31,25 @@
     grid-area: mp;
 }
 
+.media-content{
+    font-size: 10px;
+    color: #7A3939;
+    line-break: anywhere;
+    word-break: normal;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-family: Merriweather,sans-serif;
+    font-weight: 100;
+}
+
+.media-content a{
+    font-size: 1.5rem;
+    color: #7A3939;
+    text-decoration: none;
+}
+
+iframe{
+    width: 90%;
+    height: 0.9fr;
+}
