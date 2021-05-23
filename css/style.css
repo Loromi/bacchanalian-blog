@@ -57,7 +57,8 @@ em{
     grid-template-columns: 1fr;
     grid-template-areas:
     "int"
-    "rcnt";
+    "rcnt1"
+    "rcnt2";
 }
 
 .header{
@@ -118,8 +119,12 @@ em{
     grid-area: int;
 }
 
-.recent{
-    grid-area: rcnt;
+.recent1{
+    grid-area: rcnt1;
+}
+
+.recent2{
+    grid-area: rcnt2;
 }
 
 .button{
