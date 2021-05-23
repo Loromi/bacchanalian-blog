@@ -15,12 +15,20 @@
     .container{
         display: grid;
         grid-template-columns: 1fr 1fr !important;
-        grid-template-rows: 15vh auto auto 15vh;
+        grid-template-rows: 15vh auto 15vh;
         grid-template-areas: 
         "hd hd"
         "post mp"
         "ft ft";
     }
+}
+
+.header{
+    font-size: 2vh;
+}
+
+.h1{
+    font-size: 3vh;
 }
 
 .post{
@@ -52,4 +60,28 @@
 iframe{
     width: 90%;
     height: 0.9fr;
+}
+
+.post header{
+    display: grid;
+    grid-template-areas: 
+    "hd hd"
+    "by date";
+}
+
+.post header h1{
+    grid-area: hd;
+    margin-left: 2rem;
+}
+
+.post header p{
+    margin-left: 1rem;
+}
+
+.author{
+    grid-area: by;
+}
+
+.date{
+    grid-area: date;
 }
