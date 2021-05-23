@@ -1,0 +1,21 @@
+@import 'style.css';
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr !important;
+    grid-template-rows: 10vh repeat(5, 1fr);
+    grid-template-areas: 
+    "hd"
+    "post"
+    "mp"
+    "ft";
+}
+
+.post{
+    grid-area: post;
+}
+
+.media-player{
+    grid-area: mp;
+}
+
