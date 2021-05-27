@@ -5,7 +5,16 @@ body{
 }
 
 a{
+    text-decoration: none;
     color: inherit;
+}
+
+.content a:hover{
+    letter-spacing: 2px;
+    font-weight: normal; 
+	color: black;
+	cursor: pointer;
+	transition: all 0.3s linear;
 }
 
 h3{
@@ -29,17 +38,6 @@ em{
     "main"
     "main"
     "ft";
-}
-
-@media(min-width: 600px) {
-    .container{
-        grid-template-columns: 225px 1fr !important;
-        grid-template-rows: 10vh 1fr 10vh;
-        grid-template-areas: 
-        "hd hd hd hd"
-        "sd main main main"
-        "ft ft ft ft";
-    }
 }
 
 .box{
@@ -185,8 +183,35 @@ em{
     display: flex;
 }
 
-#avatar{
-    margin-left: 1em;
+.recent{
+    display: block;
+}
+
+.content-image{
+    margin: 1em;
     border: 1px solid rgb(167, 170, 170, 0.87);
+    border-radius: 3%;
+}
+
+#avatar{
     border-radius: 28%;
+    margin: 0 0 0 1em;
+}
+
+@media(min-width: 600px) {
+    .container{
+        grid-template-columns: 225px 1fr !important;
+        grid-template-rows: 10vh 1fr 10vh;
+        grid-template-areas: 
+        "hd hd hd hd"
+        "sd main main main"
+        "ft ft ft ft";
+    }
+    
+}
+
+@media(min-width: 900px) {
+    .recent{
+        display: flex;
+    }
 }
