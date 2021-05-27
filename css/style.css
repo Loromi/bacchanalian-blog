@@ -31,6 +31,15 @@ em{
     border-radius: 8px;
 }
 
+.quote{
+    font-style: italic;
+}
+
+q{
+    font-style: normal;
+    font-size: 1.3em;
+}
+
 .container{
     display: grid;
     grid-template-columns: 1fr;
