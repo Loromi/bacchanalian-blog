@@ -1,0 +1,42 @@
+.content{
+    grid-area: main;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "int"
+    "rcnt1"
+    "rcnt2";
+}
+
+.intro{
+    grid-area: int;
+}
+
+.recent1{
+    grid-area: rcnt1;
+}
+
+.recent2{
+    grid-area: rcnt2;
+}
+
+.recent{
+    display: block;
+}
+
+.info-recent{
+    text-decoration: underline;
+}
+
+.content-image{
+    margin: 1em;
+    border: 1px solid rgb(167, 170, 170, 0.87);
+    border-radius: 3%;
+}
+
+@media(min-width: 900px) {
+    .recent{
+        display: flex;
+    }
+}
