@@ -1,5 +1,13 @@
 @import 'style.css';
 
+a:hover{
+    letter-spacing: 2px;
+    font-weight: normal; 
+	color: black;
+	cursor: pointer;
+	transition: all 0.3s linear;
+}
+
 .container{
     display: grid;
     grid-template-columns: 1fr !important;
@@ -84,4 +92,9 @@ iframe{
 
 .date{
     grid-area: date;
+}
+
+.sm-list{
+    display: inline-flex;
+    justify-content: center;
 }
