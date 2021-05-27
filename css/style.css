@@ -9,12 +9,16 @@ a{
     color: inherit;
 }
 
-.content a:hover{
+a:hover{
     letter-spacing: 2px;
     font-weight: normal; 
 	color: black;
 	cursor: pointer;
 	transition: all 0.3s linear;
+}
+
+.navbar a:hover{
+    letter-spacing: 0;
 }
 
 h3{
