@@ -93,8 +93,3 @@ iframe{
 .date{
     grid-area: date;
 }
-
-.sm-list{
-    display: inline-flex;
-    justify-content: center;
-}
